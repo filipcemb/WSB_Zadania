@@ -1,0 +1,7 @@
+F:\Users\flown\Documents\WSB_Zadania\WSB_C_2020_Z1\bin\Debug\WSB_C_2020_Z1.exe.config
+F:\Users\flown\Documents\WSB_Zadania\WSB_C_2020_Z1\bin\Debug\WSB_C_2020_Z1.exe
+F:\Users\flown\Documents\WSB_Zadania\WSB_C_2020_Z1\bin\Debug\WSB_C_2020_Z1.pdb
+F:\Users\flown\Documents\WSB_Zadania\WSB_C_2020_Z1\obj\Debug\WSB_C_2020_Z1.csprojAssemblyReference.cache
+F:\Users\flown\Documents\WSB_Zadania\WSB_C_2020_Z1\obj\Debug\WSB_C_2020_Z1.csproj.CoreCompileInputs.cache
+F:\Users\flown\Documents\WSB_Zadania\WSB_C_2020_Z1\obj\Debug\WSB_C_2020_Z1.exe
+F:\Users\flown\Documents\WSB_Zadania\WSB_C_2020_Z1\obj\Debug\WSB_C_2020_Z1.pdb

@@ -10,8 +10,27 @@ namespace WSB_C_2020_Z1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
-            Console.ReadKey();
+            long power = 1;
+            for (int i = 2; i <= 9; i++)
+            {
+                power = power * i;
+            }
+            Console.WriteLine($"9! = {power}");
+
+            power = 1;
+            for (int i = 2; i <= 20; i++)
+            {
+                power = power * i;
+            }
+            Console.WriteLine($"20! = {power}");
+
+            power = 1;
+            for (int i = 2; i <= 243; i++)   // overflow :(
+            {
+                power = power * i;
+            }
+            Console.WriteLine($"243! = {power}");
+            Console.ReadLine();
         }
     }
 }
