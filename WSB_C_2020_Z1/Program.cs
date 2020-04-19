@@ -10,6 +10,8 @@ namespace WSB_C_2020_Z1
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello World");
+            Console.ReadKey();
         }
     }
 }
