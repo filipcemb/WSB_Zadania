@@ -16,19 +16,22 @@ namespace WSB_C_2020_Z1
             Console.WriteLine("Podaj drugą liczbę: ");
             int b = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Jaką operację chcesz wykonać (+/-): ");
+            Console.WriteLine("Jaką operację chcesz wykonać (+ | - | *): ");
             string operation = Console.ReadLine();
-            if (operation == "+")
+            switch (operation)
             {
-                Console.WriteLine(a + b);
-            }
-            else if (operation == "-")
-            {
-                Console.WriteLine(a - b);
-            }
-            else
-            {
-                Console.WriteLine("Nieznana operacja!");
+                case "+":
+                    Console.WriteLine(a + b);
+                    break;
+                case "-":
+                    Console.WriteLine(a - b);
+                    break;
+                case "*":
+                    Console.WriteLine(a * b);
+                    break;
+                default:
+                    Console.WriteLine("Nieznana operacja!");
+                    break;
             }
             Console.ReadLine();
         }
