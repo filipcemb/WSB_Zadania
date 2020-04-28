@@ -10,39 +10,51 @@ namespace WSB_C_2020_Z1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Podaj pierwszą liczbę: ");
+            Console.WriteLine("Podaj liczbę: ");
             int a = int.Parse(Console.ReadLine());
+            string operation;
 
-            Console.WriteLine("Podaj drugą liczbę: ");
-            int b = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Jaką operację chcesz wykonać (+ | - | * | /): ");
-            string operation = Console.ReadLine();
-            switch (operation)
+            do
             {
-                case "+":
-                    Console.WriteLine(a + b);
+                Console.WriteLine("Jaką operację chcesz wykonać (+ | - | * | /) lub wciśnij \"n\" aby zakończyć program ");
+                operation = Console.ReadLine();
+
+                if (operation == "n")
+                {
+                    Console.WriteLine("Twój wynik to: " + a);
                     break;
-                case "-":
-                    Console.WriteLine(a - b);
-                    break;
-                case "*":
-                    Console.WriteLine(a * b);
-                    break;
-                case "/":
-                    if (b == 0)
-                    {
-                        Console.WriteLine("Nie wolno dzielić przez 0");
-                    }
-                    else
-                    {
-                        Console.WriteLine(a / b);
-                    }
-                    break;
-                default:
-                    Console.WriteLine("Nieznana operacja!");
-                    break;
-            }
+                }
+
+                Console.WriteLine("Podaj liczbę: ");
+                int b = int.Parse(Console.ReadLine());
+
+                switch (operation)
+                {
+                    case "+":
+                        a = a + b;
+                        break;
+                    case "-":
+                        a = a - b;
+                        break;
+                    case "*":
+                        a = a * b;
+                        break;
+                    case "/":
+                        if (b == 0)
+                        {
+                            Console.WriteLine("Nie wolno dzielić przez 0");
+                        }
+                        else
+                        {
+                            a = a / b;
+                        }
+                        break;
+                    default:
+                        Console.WriteLine("Nieznana operacja!");
+                        break;
+                }
+            } while (operation != "n");
+
             Console.ReadLine();
         }
     }
