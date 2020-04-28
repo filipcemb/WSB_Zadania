@@ -10,27 +10,21 @@ namespace WSB_C_2020_Z1
     {
         static void Main(string[] args)
         {
-            double power = 1;
-            for (byte i = 2; i <= 9; i++)
-            {
-                power = power * i;
-            }
-            Console.WriteLine($"9! = {power}");
-
-            power = 1;
-            for (byte i = 2; i <= 12; i++)
-            {
-                power = power * i;
-            }
-            Console.WriteLine($"12! = {power}");
-
-            power = 1;
-            for (byte i = 2; i <= 20; i++)   
-            {
-                power = power * i;
-            }
-            Console.WriteLine($"20! = {power}");
+            Console.WriteLine("Podaj liczbę: ");
+            int powerBase = int.Parse(Console.ReadLine());
+            
+            Console.WriteLine($"{powerBase}! = {Power(powerBase)}");
             Console.ReadLine();
+        }
+
+        static double Power(int powerBase)
+        {
+            double power = 1;
+            for (int i = 2; i <= powerBase; i++)
+            {
+                power = power * i;
+            }
+            return power;
         }
     }
 }
