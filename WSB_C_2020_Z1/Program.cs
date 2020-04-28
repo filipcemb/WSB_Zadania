@@ -10,6 +10,17 @@ namespace WSB_C_2020_Z1
     {
         static void Main(string[] args)
         {
+            Calculator calculator = new Calculator();
+            calculator.Calculate();
+
+            Console.ReadLine();
+        }
+    }
+
+    public class Calculator
+    {
+        public void Calculate ()
+        {
             Console.WriteLine("Podaj liczbę: ");
             int a = int.Parse(Console.ReadLine());
             string operation;
@@ -54,8 +65,6 @@ namespace WSB_C_2020_Z1
                         break;
                 }
             } while (operation != "n");
-
-            Console.ReadLine();
         }
     }
 }
